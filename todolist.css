@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  user-select: none;
+}
+/* giving initial height,font-family and background color*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(222, 64, 62);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+}
+/* cenetering the elements  */
+.todolist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* giving styling to h2 elemnt */
+.header{
+  color: rgb(219, 223, 227);
+  margin-top: 50px;
+  text-decoration: underline orange ;
+}
+/* joining input and add button */
+.input-but{
+  display: inline-flex;
+  float: left;
+}
+/* giving styling to input */
+.input{
+  padding: 10px;
+  border-right: none;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+} 
+/* giving styling to button  */
+.button{
+  padding: 10px;
+  border-left: none;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+/*removing marker in list and some width to ol*/
+.ol{
+  padding: 0;
+  width: 250px;
+  height: fit-content;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  cursor: pointer;
+}
+/* adding styling to all the list items that will be added in the ordered list */
+.li{
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: x-large;
+  display: inline-block;
+  color: rgb(100, 145, 136);
+  width: 300px;
+}
+.li:nth-child(odd) {
+  background: #f9f9f9;
+}
+.li:hover{
+  background-color: #ddd;
+}
+/*styling cross */
+.close{
+  padding-left: 200px;
+  margin:0;
+  padding: 0;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: x-large;
+  display: inline-block;
+  color: rgb(100, 145, 136);
+  cursor: pointer;
+}
+/* giving styling while hovering the elements */
+.close:hover{
+  background-color: #07a52a;
+  color: white;
+}
+/* For reposnsiveness*/
+@media screen and (max-width:550px){
+  .li{
+    width:250px;
+  }
+}

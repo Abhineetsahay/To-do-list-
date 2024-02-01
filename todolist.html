@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baisc To do list</title>
+    <link rel="stylesheet" href="todolist.css"/>
+  </head>
+  <body>
+    <!-- the main div of to do list -->
+    <div class="todolist">
+      <!-- contains the h2 element -->
+      <div class="header">
+          <h2>To do list</h2>
+      </div>
+      <!-- this div contains input area and a button to add -->
+      <div class="input-but">
+        <input type="text" class="input" id="input" placeholder="Write your task...">
+        <button type="submit" class="button" onclick="addListitems()" >ADD</button>
+      </div>
+      <!-- this is a ordered list which will contains all the list items that will be added -->
+        <ol class="ol" id="ol">
+        </ol>
+    </div>
+    <script src="todolist.js"></script>
+  </body>
+</html>
